@@ -1,0 +1,14 @@
+version: "3.2"
+
+services:
+    apache:
+        image: httpd:2.4
+        ports:
+          - 8085:443
+        volumes:
+            - ./data/:/usr/local/apache2/htdocs/
+            - ./data/certs/server.crt:/usr/local/apache2/conf/server.crt
+            - ./data/certs/server.key:/usr/local/apache2/conf/server.key
+            - ./data/httpd.conf:/usr/local/apache2/conf/httpd.conf
+        restart: always
+        container_name: apache
