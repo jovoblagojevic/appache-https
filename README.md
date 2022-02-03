@@ -14,9 +14,9 @@ openssl req -newkey rsa:4096 \
             
 # Enable SSL - Apache
 
-Open Apache SSL configuration file: httpd.conf
-Uncomment: LoadModule ssl_module modules/mod_ssl.so
-Uncomment: LoadModule ssl_module modules/mod_ssl.so
-Uncomment: Include conf/extra/httpd-ssl.conf
-Add Line SSLCertificateFile     /usr/local/apache2/conf/server.crt
-Add line: SSLCertificateKeyFile  /usr/local/apache2/conf/server.key
+Open Apache SSL configuration file: httpd.conf  
+Uncomment: LoadModule ssl_module modules/mod_ssl.so  
+Uncomment: LoadModule ssl_module modules/mod_ssl.so  
+Uncomment: Include conf/extra/httpd-ssl.conf  
+Add Line SSLCertificateFile     /usr/local/apache2/conf/server.crt  
+Add line: SSLCertificateKeyFile  /usr/local/apache2/conf/server.key  
